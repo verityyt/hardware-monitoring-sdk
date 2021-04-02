@@ -1,8 +1,12 @@
-import SDKHandler as SdkHandler
+import sdk.HMSDK
 
 fun main() {
 
-    val sdk = SdkHandler
+    val sdk = object : HMSDK() {
+        override fun handle(input: String) {
+            println(input)
+        }
+    }
     sdk.startListening()
 
 }
