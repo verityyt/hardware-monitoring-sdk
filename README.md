@@ -2,16 +2,16 @@
 
 HMSDK *(= Hardware Monitoring Software Development Kit)* is a library which receives the current temperatures etc. from the [Hardware Monitoring Display](https://github.com/verityyt/hardware-monitoring-display).
 
-## Example
+## [Example](https://github.com/verityyt/hardware-monitoring-sdk/blob/master/example/Example.kt)
 ```kotlin
 import sdk.HMSDK
-...
 
 val sdk = object : HMSDK() {
     override fun handle(input: String) {
         println(input)
     }
 }
+
 sdk.startListening()
 ```
 
